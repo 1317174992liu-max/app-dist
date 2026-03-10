@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>薯帖 - 安装</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #ff6b6b, #ff4757);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            max-width: 380px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            border-radius: 18px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+        }
+        h1 { font-size: 24px; color: #333; margin-bottom: 8px; }
+        .version { color: #999; font-size: 14px; margin-bottom: 24px; }
+        .install-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff6b6b, #ff4757);
+            color: white;
+            text-decoration: none;
+            padding: 14px 48px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        .install-btn:active { transform: scale(0.96); }
+        .note {
+            margin-top: 24px;
+            font-size: 13px;
+            color: #999;
+            line-height: 1.6;
+        }
+        .step { margin-top: 20px; text-align: left; font-size: 14px; color: #666; line-height: 1.8; }
+        .step strong { color: #333; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="app-icon">📕</div>
+        <h1>薯帖</h1>
+        <p class="version">版本 1.0 (Build 2)</p>
+        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://1317174992liu-max.github.io/app-dist/manifest.plist">
+            安装 App
+        </a>
+        <div class="note">
+            请使用 iPhone 的 <strong>Safari 浏览器</strong> 打开此页面
+        </div>
+        <div class="step">
+            <strong>安装后如果提示"未受信任的开发者"：</strong><br>
+            1. 打开 设置 → 通用 → VPN与设备管理<br>
+            2. 找到开发者证书，点击"信任"<br>
+            3. 返回桌面打开薯帖
+        </div>
+    </div>
+</body>
+</html>
